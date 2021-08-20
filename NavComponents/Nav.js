@@ -18,7 +18,7 @@ function Nav(props) {
       props.loadCwsStore({ infosCWparticipate: response.infosCWparticipate, infosCWorganize: response.infosCWorganize });
     }
 
-    //AsyncStorage.removeItem("token");
+    // AsyncStorage.removeItem("token");
     AsyncStorage.getItem('token', (err, value) => {
       if (value) {
         const valueParse = JSON.parse(value);
